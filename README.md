@@ -34,4 +34,72 @@ The final optimized model achieves over **99.6% accuracy** on the validation set
 - **Data Handling:** `pandas`, `numpy`
 - **Visualization:** `matplotlib`, `seaborn`
 
-## 📁 Repository Structure
+
+## 🧪 Methodology
+
+### 1. Data Preprocessing
+- Pixel values normalized to `[0, 1]` range.
+- Train-Validation split (90%-10%).
+
+### 2. Baseline Models
+- Established performance benchmarks with traditional ML models.
+
+### 3. Convolutional Neural Network (CNN)
+The architecture features:
+- **Convolutional Layers:** Multiple `Conv2D` layers with `3x3` kernels and ReLU activation.
+- **Batch Normalization:** For stable and faster training.
+- **Max-Pooling:** For dimensionality reduction.
+- **Dropout:** To prevent overfitting.
+- **Data Augmentation:** Real-time augmentation (rotations, shifts, zooms) to improve generalization.
+
+### 4. Hyperparameter Optimization with Optuna
+Optuna was used to automatically find the best hyperparameters over 20 trials, searching for:
+- **Dropout rates**
+- **Number of units** in the dense layer
+- **Learning rate**
+- **Batch size**
+
+## 💻 How to Run the Code
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/digit-recognizer-cnn-optuna.git
+    cd digit-recognizer-cnn-optuna
+    ```
+
+2.  **Set up a Python environment** (recommended) and install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+    *(Note: Create a `requirements.txt` file using `pip freeze > requirements.txt` from your working environment)*.
+
+3.  **Run the Jupyter Notebook:**
+    ```bash
+    jupyter notebook notebookfe79f5c666.ipynb
+    ```
+    The notebook is self-contained and will guide you through the entire process.
+
+## 📈 Key Findings
+
+- **CNN Superiority:** Deep learning significantly outperforms traditional machine learning models for image classification tasks.
+- **Optuna's Value:** Automated hyperparameter tuning provided a noticeable boost in validation accuracy compared to manually set defaults.
+- **Data Augmentation:** Crucial for building a robust model that generalizes well.
+
+## 🔮 Future Improvements
+
+- Experiment with more complex architectures (e.g., ResNet, EfficientNet).
+- Use **Cross-Validation** for a more reliable score estimate.
+- Implement **Test Time Augmentation (TTA)** for potentially better predictions.
+- Deploy the model as an interactive web app using **Gradio** or **Streamlit**.
+
+## 🤝 Contributing
+
+Contributions and suggestions are welcome! Please feel free to fork the repository and submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details (if you add one).
+
+---
+
+**⭐ If you found this project helpful or interesting, please give it a star! ⭐**
