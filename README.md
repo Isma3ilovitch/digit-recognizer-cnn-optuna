@@ -59,25 +59,7 @@ Optuna was used to automatically find the best hyperparameters over 20 trials, s
 - **Learning rate**
 - **Batch size**
 
-## 💻 How to Run the Code
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/your-username/digit-recognizer-cnn-optuna.git
-    cd digit-recognizer-cnn-optuna
-    ```
-
-2.  **Set up a Python environment** (recommended) and install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-    *(Note: Create a `requirements.txt` file using `pip freeze > requirements.txt` from your working environment)*.
-
-3.  **Run the Jupyter Notebook:**
-    ```bash
-    jupyter notebook notebookfe79f5c666.ipynb
-    ```
-    The notebook is self-contained and will guide you through the entire process.
 
 ## 📈 Key Findings
 
